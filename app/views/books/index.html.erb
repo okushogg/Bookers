@@ -1,11 +1,11 @@
 <h4>Books</h4>
 <div class="index-body">
-    <div class="index-title">Title</div>    
-    <div class="index-body">Body</div>
+    <span>Title</span>    
+    <span>Body</span> </br>
 
     
 <% @books.each do |book| %>
-<span class="book-title"><%= book.title %></span></br>
+<span class="book-title"><%= book.title %></span>
 <span class="book-body"><%= book.body %></span>
 <span class="book-show"><%= link_to 'Show', book_path(book.id) %></span>
 <span class="book-edit"><%= link_to 'Edit', edit_book_path(book.id) %></span>
