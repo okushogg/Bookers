@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   
   def top
+    puts 'SECRET_KEY'
   end
   
   def index
